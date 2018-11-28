@@ -20,3 +20,21 @@ TEST(TicTacToeBoardTest, unitTestName)
 	ASSERT_TRUE(true);
 }
 */
+
+TEST(TicTacToeBoardTest, X_to_O)
+{
+	TicTacToeBoard obj = TicTacToeBoard();
+	ASSERT_EQ(obj.toggleTurn(), O);
+}
+
+TEST(TicTacToeBoardTest, O_to_X)
+{
+	TicTacToeBoard obj = TicTacToeBoard();
+	obj.toggleTurn();
+	ASSERT_EQ(obj.toggleTurn(), X);
+}
+
+/*TEST(TicTacToeBoardTest, get_empty_piece)
+{
+	
+}*/
